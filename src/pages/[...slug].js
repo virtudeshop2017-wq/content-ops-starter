@@ -42,12 +42,20 @@ function Page(props) {
 export function getStaticPaths() {
     const data = allContent();
     const paths = resolveStaticPaths(data);
-    return { paths, fallback: false };
+    return {
+        paths: paths.map((path) => {
+            const normalizedPath = typeof path === 'string' ? path : path?.pathname || '';
+            const trimmedPath = normalizedPath.replace(/^\/+|\/+$/g, '');
+            const slug = trimmedPath ? trimmedPath.split('/') : [];
+            return { params: { slug } };
+        }),
+        fallback: false
+    };
 }
 
 export async function getStaticProps({ params }) {
     const data = allContent();
-    const urlPath = '/' + (params.slug || []).join('/');
+    const urlPath = '/' + (params?.slug || []).join('/');
     const props = await resolveStaticProps(urlPath, data);
     return { props };
 }
