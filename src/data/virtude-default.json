@@ -1,0 +1,271 @@
+{
+  "brand": {
+    "name": {
+      "text": "Virtude",
+      "color": "#2F6F18",
+      "size": 22
+    },
+    "tagline": {
+      "text": "Cuidado premium, simples e verdadeiro.",
+      "color": "#2F6F18",
+      "size": 15
+    }
+  },
+  "hero": {
+    "title": {
+      "text": "Experimente a sensacao de cuidado Virtude",
+      "color": "#23301C",
+      "size": 44
+    },
+    "subtitle": {
+      "text": "Garanta seu estoque agora e receba em casa com suporte dedicado.",
+      "color": "#4F5B47",
+      "size": 18
+    },
+    "ctaLabel": {
+      "text": "Quero o meu agora",
+      "color": "#FFFFFF",
+      "size": 16
+    },
+    "note": {
+      "text": "Pagamento seguro, envio rapido e atendimento humano.",
+      "color": "#6C7467",
+      "size": 14
+    },
+    "badge": {
+      "text": "Edicao limitada",
+      "color": "#2F6F18",
+      "size": 12
+    }
+  },
+  "highlights": {
+    "items": [
+      {
+        "title": {
+          "text": "Formula delicada",
+          "color": "#23301C",
+          "size": 18
+        },
+        "text": {
+          "text": "Ingredientes selecionados para um cuidado diario sem excessos.",
+          "color": "#5B6456",
+          "size": 14
+        }
+      },
+      {
+        "title": {
+          "text": "Textura aveludada",
+          "color": "#23301C",
+          "size": 18
+        },
+        "text": {
+          "text": "Absorcao suave e toque seco, mantendo o conforto o dia inteiro.",
+          "color": "#5B6456",
+          "size": 14
+        }
+      },
+      {
+        "title": {
+          "text": "Resultado visivel",
+          "color": "#23301C",
+          "size": 18
+        },
+        "text": {
+          "text": "Pele macia e iluminada com sensacao natural desde a primeira aplicacao.",
+          "color": "#5B6456",
+          "size": 14
+        }
+      }
+    ]
+  },
+  "product": {
+    "title": {
+      "text": "O cuidado que respeita seu ritmo",
+      "color": "#23301C",
+      "size": 28
+    },
+    "text": {
+      "text": "Virtude combina ativos suaves e tecnologia limpa para um ritual simples e eficaz.",
+      "color": "#5B6456",
+      "size": 16
+    },
+    "points": [
+      {
+        "text": "Hidratacao profunda sem pesar",
+        "color": "#4F5B47",
+        "size": 15
+      },
+      {
+        "text": "Ideal para uso diario",
+        "color": "#4F5B47",
+        "size": 15
+      },
+      {
+        "text": "Perfume leve e sofisticado",
+        "color": "#4F5B47",
+        "size": 15
+      }
+    ],
+    "image": {
+      "src": "/images/abstract-feature1.svg",
+      "alt": "Produto Virtude",
+      "align": "right",
+      "width": 62,
+      "rounded": true
+    }
+  },
+  "gallery": {
+    "title": {
+      "text": "Detalhes que fazem a diferenca",
+      "color": "#23301C",
+      "size": 22
+    },
+    "images": [
+      {
+        "src": "/images/abstract-feature2.svg",
+        "alt": "Detalhe Virtude",
+        "align": "left",
+        "width": 100,
+        "rounded": true
+      },
+      {
+        "src": "/images/abstract-feature3.svg",
+        "alt": "Textura Virtude",
+        "align": "center",
+        "width": 100,
+        "rounded": true
+      },
+      {
+        "src": "/images/abstract-feature1.svg",
+        "alt": "Rotina Virtude",
+        "align": "right",
+        "width": 100,
+        "rounded": true
+      }
+    ]
+  },
+  "blocks": [
+    {
+      "id": "block-1",
+      "type": "text",
+      "text": {
+        "text": "Um ritual que eleva o bem-estar com simplicidade.",
+        "color": "#384233",
+        "size": 18
+      },
+      "align": "center"
+    },
+    {
+      "id": "block-2",
+      "type": "image",
+      "src": "/images/main-hero.svg",
+      "alt": "Aplicacao Virtude",
+      "align": "center",
+      "width": 70,
+      "rounded": true
+    },
+    {
+      "id": "block-3",
+      "type": "video",
+      "src": "https://www.youtube.com/embed/ysz5S6PUM-U",
+      "align": "center",
+      "width": 80
+    }
+  ],
+  "reviews": {
+    "title": {
+      "text": "Avaliacoes reais",
+      "color": "#23301C",
+      "size": 22
+    },
+    "items": [
+      {
+        "name": {
+          "text": "Marina S.",
+          "color": "#23301C",
+          "size": 16
+        },
+        "role": {
+          "text": "Cliente ha 6 meses",
+          "color": "#6B7466",
+          "size": 13
+        },
+        "rating": 5,
+        "text": {
+          "text": "A pele ficou mais macia e luminosa sem ficar oleosa. O toque e perfeito.",
+          "color": "#4F5B47",
+          "size": 14
+        },
+        "avatar": "/images/avatar1.svg"
+      },
+      {
+        "name": {
+          "text": "Paula R.",
+          "color": "#23301C",
+          "size": 16
+        },
+        "role": {
+          "text": "Compradora verificada",
+          "color": "#6B7466",
+          "size": 13
+        },
+        "rating": 5,
+        "text": {
+          "text": "Chegou rapido e o atendimento foi super atencioso. Produto de qualidade.",
+          "color": "#4F5B47",
+          "size": 14
+        },
+        "avatar": "/images/avatar2.svg"
+      },
+      {
+        "name": {
+          "text": "Ana L.",
+          "color": "#23301C",
+          "size": 16
+        },
+        "role": {
+          "text": "Cliente recorrente",
+          "color": "#6B7466",
+          "size": 13
+        },
+        "rating": 4,
+        "text": {
+          "text": "Cheiro suave e textura leve. Gostei da sensacao de frescor.",
+          "color": "#4F5B47",
+          "size": 14
+        },
+        "avatar": "/images/avatar3.svg"
+      }
+    ]
+  },
+  "footer": {
+    "text": {
+      "text": "Virtude Shop - cuidado premium feito com carinho.",
+      "color": "#4F5B47",
+      "size": 13
+    },
+    "note": {
+      "text": "Suporte dedicado de segunda a sexta.",
+      "color": "#7A8473",
+      "size": 12
+    },
+    "links": [
+      {
+        "label": {
+          "text": "Politica de privacidade",
+          "color": "#2F6F18",
+          "size": 13
+        },
+        "url": "/"
+      },
+      {
+        "label": {
+          "text": "Termos de uso",
+          "color": "#2F6F18",
+          "size": 13
+        },
+        "url": "/"
+      }
+    ]
+  }
+}

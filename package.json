@@ -9,6 +9,8 @@
     "dependencies": {
         "@algolia/autocomplete-js": "^1.17.1",
         "@algolia/autocomplete-theme-classic": "^1.17.1",
+        "@netlify/blobs": "^10.5.0",
+        "@netlify/functions": "^5.1.2",
         "algoliasearch": "^4.24.0",
         "classnames": "^2.5.1",
         "dayjs": "^1.11.11",
