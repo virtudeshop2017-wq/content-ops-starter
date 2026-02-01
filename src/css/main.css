@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Slab:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto+Slab:wght@400;500;700&family=Cormorant+Garamond:wght@400;600;700&family=Manrope:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -322,6 +322,560 @@
         }
         to {
             transform: translate3d(0,0,0)
+        }
+    }
+}
+
+@layer components {
+    :root {
+        --virtude-green: #2f6f18;
+        --virtude-green-light: #3b7d20;
+        --virtude-cream: #f6f5f0;
+        --virtude-olive: #e1ead2;
+        --virtude-shadow: 0 24px 70px rgba(30, 60, 20, 0.15);
+    }
+
+    .virtude-root {
+        font-family: 'Manrope', sans-serif;
+        background: radial-gradient(circle at top, #f8f7f3, #f1f1ea);
+        color: #23301c;
+        min-height: 100vh;
+        padding-bottom: 80px;
+    }
+
+    .virtude-hero {
+        padding: 48px 24px 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .virtude-hero-card {
+        max-width: 1200px;
+        width: 100%;
+        padding: 48px;
+        border-radius: 40px;
+        background: linear-gradient(120deg, var(--virtude-cream), var(--virtude-olive));
+        box-shadow: var(--virtude-shadow);
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 40px;
+        align-items: center;
+    }
+
+    .virtude-hero-content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .virtude-logo {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: var(--virtude-green-light);
+    }
+
+    .virtude-logo-text {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 700;
+    }
+
+    .virtude-logo-mark {
+        font-size: 14px;
+        color: var(--virtude-green-light);
+    }
+
+    .virtude-tagline {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+    }
+
+    .virtude-badge {
+        display: inline-flex;
+        padding: 6px 14px;
+        border-radius: 999px;
+        border: 1px solid rgba(47, 111, 24, 0.2);
+        background: rgba(255, 255, 255, 0.7);
+        font-size: 12px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+    }
+
+    .virtude-hero-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 600;
+        line-height: 1.05;
+    }
+
+    .virtude-hero-subtitle {
+        max-width: 520px;
+        line-height: 1.6;
+    }
+
+    .virtude-hero-note {
+        font-size: 14px;
+    }
+
+    .virtude-button {
+        background: var(--virtude-green);
+        color: #fff;
+        border-radius: 999px;
+        padding: 14px 28px;
+        font-weight: 600;
+        width: fit-content;
+        box-shadow: 0 10px 20px rgba(30, 60, 20, 0.2);
+    }
+
+    .virtude-button-text {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 600;
+    }
+
+    .virtude-glow {
+        text-shadow: 0 2px 12px rgba(80, 120, 70, 0.2);
+    }
+
+    .virtude-hero-image {
+        display: flex;
+        justify-content: center;
+    }
+
+    .virtude-product-image img,
+    .virtude-gallery-image img,
+    .virtude-block-media img {
+        box-shadow: 0 18px 45px rgba(30, 60, 20, 0.15);
+    }
+
+    .virtude-section {
+        padding: 32px 24px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .virtude-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+    }
+
+    .virtude-card {
+        padding: 24px;
+        background: #ffffff;
+        border-radius: 24px;
+        box-shadow: 0 16px 30px rgba(40, 60, 40, 0.08);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .virtude-card-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 600;
+    }
+
+    .virtude-section-title {
+        font-family: 'Cormorant Garamond', serif;
+        font-weight: 600;
+        margin-bottom: 12px;
+    }
+
+    .virtude-section-text {
+        max-width: 520px;
+        line-height: 1.7;
+    }
+
+    .virtude-product {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px;
+        align-items: center;
+    }
+
+    .virtude-product-text {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .virtude-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .virtude-list-text::before {
+        content: '•';
+        margin-right: 8px;
+        color: var(--virtude-green-light);
+    }
+
+    .virtude-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 18px;
+    }
+
+    .virtude-gallery-item {
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 12px;
+        box-shadow: 0 16px 30px rgba(40, 60, 40, 0.08);
+    }
+
+    .virtude-blocks {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .virtude-block-text {
+        font-size: 18px;
+        line-height: 1.6;
+    }
+
+    .virtude-review-card {
+        background: #ffffff;
+        border-radius: 24px;
+        padding: 24px;
+        box-shadow: 0 16px 30px rgba(40, 60, 40, 0.08);
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .virtude-review-header {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .virtude-review-avatar img {
+        width: 56px;
+        height: 56px;
+        object-fit: contain;
+    }
+
+    .virtude-review-meta {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+
+    .virtude-review-stars {
+        color: #d5b95f;
+        font-size: 16px;
+        display: flex;
+        gap: 4px;
+    }
+
+    .virtude-review-stars span {
+        opacity: 0.3;
+    }
+
+    .virtude-review-stars span.active {
+        opacity: 1;
+    }
+
+    .virtude-editor .virtude-review-stars span {
+        cursor: pointer;
+    }
+
+    .virtude-footer {
+        margin-top: 40px;
+        padding: 32px 24px 40px;
+        background: #f0f1e8;
+        border-top: 1px solid rgba(40, 50, 30, 0.08);
+    }
+
+    .virtude-footer-content {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .virtude-footer-links {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+    }
+
+    .virtude-footer-link {
+        text-decoration: none;
+    }
+
+    .virtude-footer-note {
+        font-size: 12px;
+        max-width: 1200px;
+        margin: 8px auto 0;
+    }
+
+    .virtude-media {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        display: block;
+    }
+
+    .virtude-image-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .virtude-image-left {
+        align-items: flex-start;
+    }
+
+    .virtude-image-center {
+        align-items: center;
+    }
+
+    .virtude-image-right {
+        align-items: flex-end;
+    }
+
+    .virtude-image-action {
+        margin-top: 8px;
+        background: rgba(47, 111, 24, 0.1);
+        color: var(--virtude-green);
+        padding: 6px 10px;
+        border-radius: 999px;
+        font-size: 11px;
+        font-weight: 600;
+        width: fit-content;
+    }
+
+    .virtude-video-frame {
+        width: 100%;
+        border-radius: 24px;
+        overflow: hidden;
+        box-shadow: 0 18px 45px rgba(30, 60, 20, 0.15);
+    }
+
+    .virtude-video-frame iframe {
+        width: 100%;
+        height: 360px;
+        border: 0;
+        display: block;
+    }
+
+    .virtude-video-frame video {
+        width: 100%;
+        height: 360px;
+        object-fit: contain;
+        display: block;
+        background: #0f120d;
+    }
+
+    .virtude-editor {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        min-height: 100vh;
+        background: #f4f3ee;
+    }
+
+    .virtude-editor-panel {
+        background: #ffffff;
+        border-right: 1px solid rgba(30, 40, 20, 0.08);
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .virtude-editor-header h2 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 22px;
+        margin-bottom: 8px;
+    }
+
+    .virtude-editor-actions button {
+        background: var(--virtude-green);
+        color: #ffffff;
+        padding: 10px 16px;
+        border-radius: 999px;
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .virtude-editor-status {
+        font-size: 12px;
+        color: #5a6453;
+    }
+
+    .virtude-editor-block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .virtude-editor-block h3 {
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: #6a7464;
+    }
+
+    .virtude-editor-toggle,
+    .virtude-editor-buttons {
+        display: flex;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    .virtude-editor-toggle button,
+    .virtude-editor-buttons button {
+        background: #f2f3ec;
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+    .virtude-editor-toggle button.active {
+        background: var(--virtude-green);
+        color: #ffffff;
+    }
+
+    .virtude-editor-block label {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        font-size: 12px;
+        color: #5b6456;
+    }
+
+    .virtude-editor-block input,
+    .virtude-editor-block select {
+        padding: 8px 10px;
+        border-radius: 10px;
+        border: 1px solid rgba(30, 40, 20, 0.15);
+        background: #ffffff;
+    }
+
+    .virtude-editor-preview {
+        padding: 24px;
+        overflow: auto;
+    }
+
+    .virtude-editor-preview.mobile .virtude-editor-preview-inner {
+        max-width: 420px;
+        margin: 0 auto;
+        border: 1px solid rgba(40, 60, 40, 0.1);
+        border-radius: 32px;
+        box-shadow: 0 24px 60px rgba(30, 60, 20, 0.2);
+        overflow: hidden;
+    }
+
+    .virtude-editor-preview-inner {
+        background: #f8f7f3;
+        border-radius: 32px;
+    }
+
+    .virtude-editor-login {
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #f8f7f3, #eef0e6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 24px;
+    }
+
+    .virtude-login-card {
+        background: #ffffff;
+        padding: 36px;
+        border-radius: 28px;
+        box-shadow: 0 20px 50px rgba(30, 60, 20, 0.2);
+        max-width: 400px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .virtude-login-card h1 {
+        font-family: 'Cormorant Garamond', serif;
+        font-size: 26px;
+    }
+
+    .virtude-login-card form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .virtude-login-card input {
+        padding: 10px 12px;
+        border-radius: 12px;
+        border: 1px solid rgba(30, 40, 20, 0.15);
+    }
+
+    .virtude-login-card button {
+        background: var(--virtude-green);
+        color: #fff;
+        border-radius: 999px;
+        padding: 12px;
+        font-weight: 600;
+    }
+
+    .virtude-login-error {
+        background: rgba(150, 40, 40, 0.1);
+        color: #842626;
+        padding: 8px 10px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+
+    .virtude-secret-button {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        z-index: 9999;
+        background: var(--virtude-green);
+        color: #ffffff;
+        border-radius: 999px;
+        padding: 10px 16px;
+        font-size: 12px;
+        font-weight: 600;
+        box-shadow: 0 12px 30px rgba(30, 60, 20, 0.3);
+    }
+
+    .virtude-secret-button span {
+        display: inline-flex;
+        gap: 6px;
+        align-items: center;
+    }
+
+    .virtude-editor [data-editor-path][data-selected='true'],
+    .virtude-editor [data-editor-path][data-selected='true'] * {
+        outline: 2px solid rgba(47, 111, 24, 0.4);
+        outline-offset: 2px;
+    }
+
+    @media (max-width: 900px) {
+        .virtude-hero-card,
+        .virtude-product {
+            grid-template-columns: 1fr;
+        }
+
+        .virtude-hero-card {
+            padding: 32px;
+        }
+
+        .virtude-editor {
+            grid-template-columns: 1fr;
+        }
+
+        .virtude-editor-panel {
+            border-right: none;
+            border-bottom: 1px solid rgba(30, 40, 20, 0.08);
         }
     }
 }
